@@ -1,9 +1,9 @@
 select 
     id, 
-    orderid, 
+    orderid as order_id, 
     paymentmethod, 
     status, 
     amount, 
     created 
-    
+
 from raw.stripe.payment
