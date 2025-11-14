@@ -6,4 +6,4 @@ select
     amount, 
     created 
 
-from raw.stripe.payment
+from {{ source('stripe', 'payment') }}
